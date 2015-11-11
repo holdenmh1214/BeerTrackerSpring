@@ -11,12 +11,11 @@ import javax.persistence.Id;
  */
 @Entity //creates table
 public class Beer {
-
-
     @Id //id
     @GeneratedValue //increments
     Integer id;
 
     String name;
     String type;
+    Integer calories;
 }
