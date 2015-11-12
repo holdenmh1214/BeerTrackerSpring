@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Beer Tracker</title>
 </head>
+<body>
+<a href="/logout">Logout</a>
 <br>
 <a href="/">All</a>
 <a href="/?type=Ale">Ales</a>
@@ -11,6 +13,7 @@
 <a href="/?type=Pilsner">Pilsners</a>
 <a href="/?type=Stout">Stouts</a>
 <a href="/?type=Other">Others</a>
+<a href="/?showMine=true">My Beers</a>
 
 </br></br>
 
@@ -33,7 +36,7 @@
 </form>
 
 {{#beers}}
-{{name}} - {{type}} - {{calories}} <br/>
+{{name}} - {{type}} - {{calories}} by {{#user}}{{name}}{{/user}}<br/>
 {{/beers}}
 </body>
 </html>
