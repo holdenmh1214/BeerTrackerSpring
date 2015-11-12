@@ -14,6 +14,7 @@ public class User {
     Integer id;
 
     String name;
+    String password;
 
     @OneToMany(mappedBy = "user") //this is the name of the field in the beer class
     List<Beer> beers;
