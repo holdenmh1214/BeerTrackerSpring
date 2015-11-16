@@ -1,6 +1,4 @@
-package com.theironyard;
-
-import org.springframework.beans.factory.annotation.Autowired;
+package com.theironyard.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,11 +14,11 @@ public class Beer {
     @GeneratedValue //increments
     Integer id;
 
-    String name;
-    String type;
-    Integer calories;
+    public String name;
+    public String type;
+    public Integer calories;
 
     @ManyToOne
-    User user;
+    public User user;
 
 }
