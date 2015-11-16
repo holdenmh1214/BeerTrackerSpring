@@ -66,7 +66,7 @@ public class BeerTrackerController {
         }else {
             model.addAttribute("beers", beers.findAll());
         }
-        return "redirect:/";
+        return "home";
     }
 
     @RequestMapping("/add-beer")
